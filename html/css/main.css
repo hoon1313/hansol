@@ -23,7 +23,8 @@ body {
     display: block;
 }
 
-#wrap {
+.wrap {
+    max-width: 1920px;
     overflow-x: hidden;
 }
 
@@ -32,7 +33,7 @@ body {
     margin: 0 auto;
 }
 
-/* @media (max-width : 1600px) {
+@media (max-width : 1600px) {
     .inner {
         max-width: calc(100% - 160px);
     }
@@ -49,7 +50,7 @@ body {
         max-width: calc(100% - 120px);
     }
 }
-*/
+
 
 #container .title {
     font-size: 4rem;
@@ -64,10 +65,6 @@ body {
 }
 
 @media (max-width : 1024px) {
-    .inner {
-        max-width: calc(100% - 200px);
-    }
-
     #container .title {
         font-size: 3rem;
     }
@@ -78,10 +75,6 @@ body {
 }
 
 @media (max-width : 768px) {
-    .inner {
-        max-width: calc(100% - 100px);
-    }
-
     #container .title {
         font-size: 2.6rem;
     }
@@ -151,3 +144,51 @@ body {
     display: block;
     padding: 5px;
 }
+
+
+/* header 끝 */
+
+
+/* mainBanner시작 */
+#mainBanner { 
+    height: 900px;
+    position: relative;
+}
+#mainBanner .mb { 
+    height: 100%;
+}
+#mainBanner .swiper-wrapper .mb1 {
+    background : url("../images/main/bg_main0802.jpg") no-repeat center top;
+    background-size: 100% auto;
+}
+#mainBanner .swiper-wrapper .mb2 {
+    background : url("../images/main/bg_main0803.jpg") no-repeat center top;
+    background-size: 100% auto;
+}
+#mainBanner .swiper-wrapper .mb3 {
+    background : url("../images/main/bg_main0804.jpg") no-repeat center top;
+    background-size: 100% auto;
+}
+#mainBanner .swiper-wrapper .mb4 {
+    background : url("../images/main/bg_main09.jpg") no-repeat center top;
+    background-size: 100% auto;
+}
+
+#mainBanner .swiper-pagination {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+.swiper-pagination-bullet {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+}
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+}
+/* mainBanner끝 */
