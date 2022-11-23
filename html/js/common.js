@@ -8,10 +8,10 @@ $(document).ready(function () { // 문서준비 이벤트 시작
             el: ".swiper-pagination",
             clickable: true,
         },
-        autoplay : {
-            delay : 3000,  // 슬라이드가 머무르는 시간, 5000=5초
-            disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
-          },
+        // autoplay : {
+        //     delay : 3000,  // 슬라이드가 머무르는 시간, 5000=5초
+        //     disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        //   },
           loop:true,
           speed : 1000,
     });

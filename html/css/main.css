@@ -56,8 +56,13 @@ body {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
-    font-family: 'GmarketSans' !important;
+    font-family: 'GmarketSans', 'Noto Sans KR';
 }
+#container .title + p {
+    text-align: center;
+    font-size: 2rem;
+}
+
 
 @media (max-width : 1920px) {
     section {
@@ -160,25 +165,11 @@ body {
     height: 100%;
 }
 
-#mainBanner .swiper-wrapper .mb1 {
-    background: url("../images/main/bg_main0802.jpg") no-repeat center top;
-    background-size: 100% auto;
+#mainBanner .swiper-wrapper a img{
+width: 100%;
+display: block;
 }
 
-#mainBanner .swiper-wrapper .mb2 {
-    background: url("../images/main/bg_main0803.jpg") no-repeat center top;
-    background-size: 100% auto;
-}
-
-#mainBanner .swiper-wrapper .mb3 {
-    background: url("../images/main/bg_main0804.jpg") no-repeat center top;
-    background-size: 100% auto;
-}
-
-#mainBanner .swiper-wrapper .mb4 {
-    background: url("../images/main/bg_main09.jpg") no-repeat center top;
-    background-size: 100% auto;
-}
 
 #mainBanner .swiper-pagination {
     position: absolute;
@@ -201,3 +192,32 @@ body {
 }
 
 /* mainBanner끝 */
+
+
+
+
+
+/* product 시작 */
+#product { 
+    border: 1px solid red;
+    height: 500px;
+}
+#product .product_list { 
+    display: flex;
+    width: 100%;
+   text-align: center;
+}
+#product .product_list dl {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+#product .product_list dl dt{
+    border: 1px solid blue;
+    width: 100%;
+    height: 100%;
+    background : url("../images/main/bg_main0802.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+/* product 끝 */
