@@ -9,7 +9,7 @@ body {
     color: #000;
     line-height: 1.5;
     font-size: 1.6rem;
-    font-family: 'Noto Sans KR', serif, 'GmarketSans',
+    font-family: 'Noto Sans KR', 'GmarketSans',
         sans-serif;
 }
 
@@ -56,6 +56,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
+    font-family: 'GmarketSans' !important;
 }
 
 @media (max-width : 1920px) {
@@ -150,27 +151,32 @@ body {
 
 
 /* mainBanner시작 */
-#mainBanner { 
+#mainBanner {
     height: 900px;
     position: relative;
 }
-#mainBanner .mb { 
+
+#mainBanner .mb {
     height: 100%;
 }
+
 #mainBanner .swiper-wrapper .mb1 {
-    background : url("../images/main/bg_main0802.jpg") no-repeat center top;
+    background: url("../images/main/bg_main0802.jpg") no-repeat center top;
     background-size: 100% auto;
 }
+
 #mainBanner .swiper-wrapper .mb2 {
-    background : url("../images/main/bg_main0803.jpg") no-repeat center top;
+    background: url("../images/main/bg_main0803.jpg") no-repeat center top;
     background-size: 100% auto;
 }
+
 #mainBanner .swiper-wrapper .mb3 {
-    background : url("../images/main/bg_main0804.jpg") no-repeat center top;
+    background: url("../images/main/bg_main0804.jpg") no-repeat center top;
     background-size: 100% auto;
 }
+
 #mainBanner .swiper-wrapper .mb4 {
-    background : url("../images/main/bg_main09.jpg") no-repeat center top;
+    background: url("../images/main/bg_main09.jpg") no-repeat center top;
     background-size: 100% auto;
 }
 
@@ -181,14 +187,17 @@ body {
     transform: translateY(-50%);
     right: 100px;
 }
+
 .swiper-pagination-bullet {
     background-color: #fff;
     width: 10px;
     height: 10px;
 }
+
 .swiper-pagination-bullet-active {
     width: 15px;
     height: 15px;
     background-color: #fff;
 }
+
 /* mainBanner끝 */

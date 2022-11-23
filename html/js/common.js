@@ -13,11 +13,7 @@ $(document).ready(function () { // 문서준비 이벤트 시작
             disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
           },
           loop:true,
-          speed : 2000,
-          effect: 'fade',
-          fadeEffect: {
-            crossFade: true
-        },
+          speed : 1000,
     });
 
 }); // 문서준비 이벤트 끝
