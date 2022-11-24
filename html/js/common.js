@@ -15,5 +15,12 @@ $(document).ready(function () { // 문서준비 이벤트 시작
           loop:true,
           speed : 1000,
     });
+    var mv = new Swiper(".movie", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop : true,
+   });
 
 }); // 문서준비 이벤트 끝

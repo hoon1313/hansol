@@ -26,6 +26,7 @@ body {
 .wrap {
     max-width: 1920px;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 .inner {
@@ -61,6 +62,7 @@ body {
 #container .title + p {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 50px;
 }
 
 
@@ -221,3 +223,107 @@ display: block;
     border-radius: 50%;
 }
 /* product 끝 */
+
+
+/* magazine 시작 */
+#magazine .ms .swiper-slide{
+}
+#magazine .ms .ms_img { 
+    width: 60%;
+    display: inline-block;
+}
+#magazine .ms .ms_img img{ 
+    width: 100%;
+}
+#magazine .ms .ms1 {
+    width: 100%;
+    display: flex;
+}
+#magazine .ms .ms_txt ul li a {
+    display: flex;
+    align-items: center;
+}
+#magazine .ms .ms_txt ul li a img { 
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+/* magazine 끝 */
+
+
+
+/* video 시작 */
+#video .title {
+    margin-bottom: 50px;
+}
+#video .movie { 
+    text-align: center;
+}
+#video .movie video {
+    width: 1200px;
+}
+
+/* video 끝 */
+
+/* popular 시작 */
+#popular .inner .popular_txt ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+#popular .inner .popular_txt ul li a { 
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: #eee;
+    color : #000;
+    border-radius: 20px;
+    transition: color 0.3s, background 0.3s;
+}
+#popular .inner .popular_txt ul li a:hover{  
+    color : #fff;
+    background: #8C6230;
+}
+
+
+#popular .popular_list {
+    height: 800px;
+}
+#popular .popular_list .pl_left { 
+    width: 48%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+}
+#popular .popular_list .pl_left .pl_left_txt { 
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#popular .popular_list .pl_left .pl_left_txt h3 { 
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    
+}
+#popular .popular_list .pl_left .pl_left_txt p  {
+    padding: 10px 0;
+    font-size: 2rem;
+}
+#popular .popular_list .pl_left a img { 
+    width: 100%;
+    display: block;
+    border-radius: 50px;
+}
+#popular .popular_list .pl_right {
+    float: left;
+    width: 50%;
+}
+#popular .popular_list .pl_right ul li a {
+    position: relative;
+    width: 50%;
+}
+/* popular 끝 */
