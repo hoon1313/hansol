@@ -59,7 +59,8 @@ body {
     text-align: center;
     font-family: 'GmarketSans', 'Noto Sans KR';
 }
-#container .title + p {
+
+#container .title+p {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 50px;
@@ -114,10 +115,6 @@ body {
 }
 
 /* header시작 */
-#header {
-
-    border: 1px solid black;
-}
 
 
 #header .header_logo h1 img {
@@ -127,7 +124,6 @@ body {
 }
 
 #header .inner {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,9 +163,9 @@ body {
     height: 100%;
 }
 
-#mainBanner .swiper-wrapper a img{
-width: 100%;
-display: block;
+#mainBanner .swiper-wrapper a img {
+    width: 100%;
+    display: block;
 }
 
 
@@ -200,54 +196,104 @@ display: block;
 
 
 /* product 시작 */
-#product { 
-    border: 1px solid red;
-    height: 500px;
-}
-#product .product_list { 
-    display: flex;
+
+#product .product_list {
     width: 100%;
-   text-align: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
 #product .product_list dl {
     width: 200px;
     height: 200px;
-    margin-right: 20px;
+    margin: 30px;
 }
-#product .product_list dl dt{
-    border: 1px solid blue;
+
+#product .product_list dl dt {
     width: 100%;
     height: 100%;
-    background : url("../images/main/bg_main0802.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
 }
+
+#product .product_list dl:first-child dt {
+    background: url("../images/main/product1.png") no-repeat center center;
+    background-size: cover;
+}
+
+#product .product_list dl:nth-child(2) dt {
+    background: url("../images/main/product2.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+#product .product_list dl:nth-child(3) dt {
+    background: url("../images/main/product3.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+#product .product_list dl:nth-child(4) dt {
+    background: url("../images/main/product4.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+#product .product_list dl:nth-child(5) dt {
+    background: url("../images/main/product5.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+#product .product_list dl:last-child dt {
+    background: url("../images/main/product6.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+dt #product .product_list dl dd {
+    font-size: 2rem;
+}
+
+#product .product_list dl:hover dt {
+    transform: translateY(-20px);
+}
+
 /* product 끝 */
 
 
 /* magazine 시작 */
-#magazine .ms .swiper-slide{
-}
-#magazine .ms .ms_img { 
+#magazine .ms .swiper-slide {}
+
+#magazine .ms .ms_img {
     width: 60%;
     display: inline-block;
 }
-#magazine .ms .ms_img img{ 
+
+#magazine .ms .ms_img img {
     width: 100%;
 }
+
 #magazine .ms .ms1 {
     width: 100%;
     display: flex;
 }
+
 #magazine .ms .ms_txt ul li a {
     display: flex;
     align-items: center;
 }
-#magazine .ms .ms_txt ul li a img { 
+
+#magazine .ms .ms_txt ul li a img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
 }
+
 /* magazine 끝 */
 
 
@@ -256,11 +302,14 @@ display: block;
 #video .title {
     margin-bottom: 50px;
 }
-#video .movie { 
+
+#video .movie {
+    width: 80%;
     text-align: center;
 }
+
 #video .movie video {
-    width: 1200px;
+    width: 100%;
 }
 
 /* video 끝 */
@@ -268,62 +317,73 @@ display: block;
 /* popular 시작 */
 #popular .inner .popular_txt ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
 
 }
-#popular .inner .popular_txt ul li a { 
+
+#popular .inner .popular_txt ul li a {
     display: block;
     text-align: center;
     padding: 15px 30px;
     margin: 20px;
     background-color: #eee;
-    color : #000;
+    color: #000;
     border-radius: 20px;
     transition: color 0.3s, background 0.3s;
 }
-#popular .inner .popular_txt ul li a:hover{  
-    color : #fff;
+
+#popular .inner .popular_txt ul li a:hover {
+    color: #fff;
     background: #8C6230;
 }
 
 
-#popular .popular_list {
-    height: 800px;
-}
-#popular .popular_list .pl_left { 
-    width: 48%;
+#popular .pl_left {
     float: left;
-    position: relative;
-    overflow: hidden;
-    margin-right: 30px;
+    width: 800px;
 }
-#popular .popular_list .pl_left .pl_left_txt { 
+
+#popular .pl_left .pl_left_img {
+    width: 100%;
+    position: relative;
+}
+
+#popular .pl_left .pl_left_txt {
     position: absolute;
     top: 10%;
     left: 10%;
 }
-#popular .popular_list .pl_left .pl_left_txt h3 { 
-    font-size: 4rem;
-    color: #fff;
-    font-weight: 700;
-    
-}
-#popular .popular_list .pl_left .pl_left_txt p  {
-    padding: 10px 0;
-    font-size: 2rem;
-}
-#popular .popular_list .pl_left a img { 
+
+#popular .pl_left .pl_left_img a img {
     width: 100%;
     display: block;
-    border-radius: 50px;
 }
-#popular .popular_list .pl_right {
-    float: left;
-    width: 50%;
+
+#popular .pl_right {
+    float: right;
+    width: 850px;
 }
-#popular .popular_list .pl_right ul li a {
+
+#popular .pl_right .pl_right_img {
     position: relative;
-    width: 50%;
+    float: right;
 }
+
+#popular .pl_right .pl_right_txt {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#popular .pl_right .pl_right_img img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 400px;
+    display: block;
+}
+
 /* popular 끝 */
