@@ -101,8 +101,9 @@ body {
 }
 
 #container .btn_more {
+    margin: 50px auto;
     display: inline-block;
-    background-color: #8E39FC;
+    background-color: #8C6230;
     color: #fff;
     padding: 15px 30px;
     border-radius: 20px;
@@ -111,7 +112,7 @@ body {
 
 #container .btn_more:hover {
     color: #fff;
-    background-color: #4000c7;
+    background-color: #dd9b49;
 }
 
 /* header시작 */
@@ -387,3 +388,166 @@ dt #product .product_list dl dd {
 }
 
 /* popular 끝 */
+
+
+/* tip시작 */
+#tip .tip_txt .title {
+    margin-bottom: 50px;
+}
+
+#tip .swiper-wrapper ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tip .swiper-wrapper ul li {
+    width: calc((100% - 40px) / 4);
+}
+
+#tip .swiper-wrapper ul li a img {
+    width: 100%;
+    display: block;
+}
+
+/* tip끝 */
+
+
+/* deco시작 */
+#deco .deco_list {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+#deco .deco_list dl {
+    padding: 450px 20px 0 20px;
+    border: 1px solid red;
+    margin: 0 10px;
+    width: calc(100%/ 4);
+}
+
+#deco .deco_list dl:first-child {
+    background: #eee url("../images/main/deco1.png") no-repeat top center;
+    background-size: 100% 400px;
+}
+
+#deco .deco_list dl:nth-child(2) {
+    background: #eee url("../images/main/deco2.png") no-repeat top center;
+    background-size: 100% 400px;
+}
+
+#deco .deco_list dl:nth-child(3) {
+    background: #eee url("../images/main/deco3.png") no-repeat top center;
+    background-size: 100% 400px;
+}
+
+#deco .deco_list dl:last-child {
+    background: #eee url("../images/main/deco4.png") no-repeat top center;
+    background-size: 100% 400px;
+}
+
+#deco .deco_list dl dt {
+    font-size: 2.4rem;
+    font-weight: 700;
+    height: 110px;
+}
+
+#deco .deco_list dl dd {
+    color: #999;
+
+}
+
+#deco .deco_list dl dd p {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 7px;
+}
+
+#deco .deco_list dl dd p span {
+    font-weight: 700;
+    padding-right: 10px;
+    color: #000;
+}
+
+/* deco끝 */
+
+
+/* help 시작 */
+
+#help {
+    background: url("../images/main/help_back.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+#help .help_list {
+    display: flex;
+    justify-content: center;
+}
+
+#help .help_list dl {
+    margin: 0 20px;
+    padding: 20px 0;
+    width: calc(100% / 3);
+    background-color: #eee;
+}
+
+#help .help_list dl:first-child {
+    font-size: 12rem;
+    text-align: center;
+}
+
+#help .help_list dl dt {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(30, 24, 124);
+    padding: 20px 0;
+}
+
+#help .help_list dl:nth-child(2) dd {
+    border-top: 2px solid #fff;
+    padding: 25px;
+}
+
+#help .help_list dl:nth-child(2) dd:hover {
+    text-decoration: underline;
+}
+
+#help .help_list dl dd p {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+#help .help_list dl dd span {
+    color: #999;
+}
+
+#help .help_list dl:last-child {
+    text-align: center;
+}
+
+#help .help_list dl:last-child dt {
+    margin-bottom: 50px;
+}
+
+#help .help_list dl:last-child input[type="text"] {
+    border: 0;
+    background-color: #fff;
+    padding: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#help .help_list dl:last-child input[type="submit"] {
+    border: 0;
+    width: 76%;
+    padding: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #666;
+    color: #ffff;
+}
+
+/* help 끝 */

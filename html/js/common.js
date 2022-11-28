@@ -22,5 +22,17 @@ $(document).ready(function () { // 문서준비 이벤트 시작
           },
           loop : true,
    });
-   
+
+    
+var tip = new Swiper(".tip", {
+pagination : {
+el : '.swiper-pagination',  // 버튼 태그 설정
+type : 'bullets',  // 버튼 종류 설정 'bullets' | 'fraction' | 'progressbar'
+clickable : true,  // 버튼 클릭 여부
+},
+        loop : true,
+    autoplay: {
+        delay: 5000,
+    }
+      });
 }); // 문서준비 이벤트 끝
