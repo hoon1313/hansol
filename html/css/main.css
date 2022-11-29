@@ -268,31 +268,39 @@ dt #product .product_list dl dd {
 
 
 /* magazine 시작 */
-#magazine .ms .swiper-slide {}
-
-#magazine .ms .ms_img {
-    width: 60%;
-    display: inline-block;
+#magazine .inner .magazine_left {
+    width: 65%;
 }
 
-#magazine .ms .ms_img img {
+#magazine .inner .magazine_left img {
     width: 100%;
+    display: block;
 }
 
-#magazine .ms .ms1 {
-    width: 100%;
+#magazine .swiper-slide {
     display: flex;
 }
 
-#magazine .ms .ms_txt ul li a {
+#magazine .inner .magazine_right {
+    width: 35%;
+    padding: 20px;
+    background-color: #f1cda1;
+    height: auto;
+}
+
+#magazine .inner .magazine_right ul li {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
-#magazine .ms .ms_txt ul li a img {
-    width: 100px;
-    height: 100px;
+#magazine .inner .magazine_right ul li a {
+    display: inline-block;
     margin-right: 20px;
+}
+
+#magazine .inner .magazine_right ul li img {
+    width: 120px;
 }
 
 /* magazine 끝 */
@@ -477,7 +485,8 @@ dt #product .product_list dl dd {
 #help {
     background: url("../images/main/help_back.jpg") no-repeat center center;
     background-size: cover;
-    padding: 20px 0;
+    padding: 50px 0;
+    margin-bottom: 0;
 }
 
 #help .help_list {
@@ -550,4 +559,47 @@ dt #product .product_list dl dd {
     color: #ffff;
 }
 
+
 /* help 끝 */
+
+/* family시작 */
+#family {
+    background-color: #8C6230;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+#family .inner .family_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#family .inner .family_link li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* family 끝 */
+
+/* footer 시작 */
+#footer {
+    background-color: #dd9b49;
+    padding: 50px 0;
+}
+
+
+#footer .footer_text {
+    font-size: 2rem;
+}
+
+#footer .footer_text address span {
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+/* footer 끝 */

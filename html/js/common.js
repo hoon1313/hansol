@@ -33,6 +33,6 @@ clickable : true,  // 버튼 클릭 여부
         loop : true,
     autoplay: {
         delay: 5000,
-    }
+    } 
       });
 }); // 문서준비 이벤트 끝
