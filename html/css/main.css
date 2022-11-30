@@ -11,6 +11,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Noto Sans KR', 'GmarketSans',
         sans-serif;
+    background-color: rgb(243, 229, 207);
 }
 
 .gmarket {
@@ -197,6 +198,10 @@ body {
 
 
 /* product 시작 */
+#product {
+    padding: 100px 0;
+    background-color: rgb(235, 220, 191);
+}
 
 #product .product_list {
     width: 100%;
@@ -284,7 +289,7 @@ dt #product .product_list dl dd {
 #magazine .inner .magazine_right {
     width: 35%;
     padding: 20px;
-    background-color: #f1cda1;
+    background-color: #ffffff;
     height: auto;
 }
 
@@ -301,6 +306,16 @@ dt #product .product_list dl dd {
 
 #magazine .inner .magazine_right ul li img {
     width: 120px;
+}
+
+#magazine .inner .magazine_right ul li p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#magazine .inner .magazine_right ul li p span {
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
 /* magazine 끝 */
@@ -323,7 +338,10 @@ dt #product .product_list dl dd {
 
 /* video 끝 */
 
+
 /* popular 시작 */
+
+
 #popular .inner .popular_txt ul {
     display: flex;
     flex-wrap: wrap;
@@ -399,6 +417,11 @@ dt #product .product_list dl dd {
 
 
 /* tip시작 */
+#tip {
+    background-color: #ebdcbf;
+    padding: 100px 0;
+}
+
 #tip .tip_txt .title {
     margin-bottom: 50px;
 }
@@ -421,6 +444,8 @@ dt #product .product_list dl dd {
 
 
 /* deco시작 */
+
+
 #deco .deco_list {
     height: 800px;
     display: flex;
@@ -485,7 +510,7 @@ dt #product .product_list dl dd {
 #help {
     background: url("../images/main/help_back.jpg") no-repeat center center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 70px 0;
     margin-bottom: 0;
 }
 
