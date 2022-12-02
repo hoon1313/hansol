@@ -48,5 +48,15 @@ clickable : true,  // 버튼 클릭 여부
     autoplay: {
         delay: 5000,
     } 
-      });
+});
+    
+
+    /* 2차메뉴 */
+    $(".depth2").hide();
+
+    $(".gnb > li").hover(function () {
+        $(this).children(".depth2").stop().slideToggle(150);
+    });
+    
+    
 }); // 문서준비 이벤트 끝

@@ -11,7 +11,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Noto Sans KR', 'GmarketSans',
         sans-serif;
-    background-color: rgb(243, 229, 207);
+    background-color: rgb(255, 248, 236);
 }
 
 .gmarket {
@@ -138,6 +138,41 @@ body {
 #header .inner .gnb>li>a {
     display: block;
     padding: 20px 10px;
+}
+
+#header .inner .gnb>li {
+    position: relative;
+}
+
+#header .inner .gnb .depth2 {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    font-size: 1.4rem;
+}
+
+#header .inner .gnb .depth2 li {
+    transition: background 0.3s;
+
+}
+
+#header .inner .gnb .depth2 li:hover {
+    background-color: #8C6230;
+}
+
+#header .inner .gnb .depth2 li:hover a {
+    color: #fff;
+}
+
+#header .inner .gnb .depth2 li a {
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s;
 }
 
 #header .inner .util {
@@ -454,7 +489,6 @@ dt #product .product_list dl dd {
 
 #deco .deco_list dl {
     padding: 450px 20px 0 20px;
-    border: 1px solid red;
     margin: 0 10px;
     width: calc(100%/ 4);
 }
